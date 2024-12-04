@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+  <object class="wxDialog" name="CatDiag">
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <title>Enter Category</title>
+    <centered>1</centered>
+    <object class="wxBoxSizer" name="bSizer4">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <flag>wxBOTTOM|wxEXPAND|wxLEFT|wxRIGHT|wxTOP</flag>
+        <border>8</border>
+        <option>1</option>
+        <object class="wxGridSizer" name="gSizer6">
+          <rows>0</rows>
+          <cols>2</cols>
+          <vgap>4</vgap>
+          <hgap>0</hgap>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxStaticText" name="m_staticText30">
+              <label>Title:</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxTextCtrl" name="TitleInput">
+              <value></value>
+              <maxlength>0</maxlength>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER|wxALL</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxStaticText" name="m_staticText301">
+              <label>Pattern:</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxTextCtrl" name="PatternInput">
+              <value></value>
+              <maxlength>0</maxlength>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxStaticText" name="m_staticText302">
+              <label>Match Mode:</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxChoice" name="MatchInput">
+              <selection>1</selection>
+              <content>
+                <item>ALWAYS</item>
+                <item>PREFIX</item>
+                <item>EXACT</item>
+                <item>REGEX</item>
+                <item>SUBSTR</item>
+                <item>SUFFIX</item>
+              </content>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER|wxALL</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxStaticText" name="m_staticText3021">
+              <label>Target Mode:</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxChoice" name="TargetInput">
+              <selection>1</selection>
+              <content>
+                <item>CLASS</item>
+                <item>TITLE</item>
+                <item>CLASS+TITLE</item>
+              </content>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER|wxALL</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxStaticText" name="m_staticText56">
+              <label>Color:</label>
+              <wrap>-1</wrap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>0</border>
+            <option>0</option>
+            <object class="wxColourPickerCtrl" name="ColourInput">
+              <style>wxCLRP_DEFAULT_STYLE</style>
+              <value>#888a8d</value>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <flag>wxALIGN_CENTER_HORIZONTAL</flag>
+        <border>5</border>
+        <option>0</option>
+        <object class="wxBoxSizer" name="bSizer6">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxCheckBox" name="Cascade">
+              <label>Cascade</label>
+              <checked>0</checked>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxCheckBox" name="Lower">
+              <label>Lower</label>
+              <checked>0</checked>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <option>0</option>
+            <object class="wxCheckBox" name="Hide">
+              <enabled>0</enabled>
+              <label>Hide</label>
+              <checked>0</checked>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <flag>wxBOTTOM|wxEXPAND|wxTOP</flag>
+        <border>6</border>
+        <option>0</option>
+        <object class="wxStdDialogButtonSizer" name="m_sdbSizer2">
+          <object class="button">
+            <object class="wxButton" name="wxID_OK"/>
+          </object>
+          <object class="button">
+            <object class="wxButton" name="wxID_CANCEL"/>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</resource>
+
